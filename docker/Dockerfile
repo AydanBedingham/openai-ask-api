@@ -1,6 +1,5 @@
 FROM python:3.9
 
-COPY ./docker/entrypoint.sh /entrypoint.sh
 COPY ./docker/docker-requirements.txt /docker-requirements.txt
 COPY ./docker/entrypoint.sh /entrypoint.sh
 RUN pip install -r /docker-requirements.txt
